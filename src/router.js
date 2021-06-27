@@ -14,3 +14,9 @@ const routes = [
     {path:'/tag/:tag', component: PostsByTag },
     {path:'/', component: AllPosts },
 ]
+
+const router = new VueRouter ({
+    routes: routes,
+    mode: 'history',
+})
+export default router
